@@ -36,9 +36,9 @@
   
           <!-- End About Nav -->
           <li class="px-5">
-            <router-link to="/events">
-              <p class="font-extrabold">EVENTS</p>
-            </router-link>
+              <nuxt-link to="/events">
+                <p class="font-extrabold">EVENTS</p>
+              </nuxt-link>
           </li>
           <!-- End Event Nav -->
           <button class="px-5 flex" type="button" v-on:mouseenter="showRes" v-on:mouseleave="hideRes">
@@ -66,11 +66,11 @@
           <!-- End Resource Nav -->
   
           <li class="px-5">
-            <router-link to="/faq">
+            <nuxt-link to="/faq">
               <p class="font-extrabold">FAQ</p>
-            </router-link>
+            </nuxt-link>
           </li>
-          <button class="px-5 ml-5 rounded-full text-sm font-bold bg-orange-500 hover:bg-orange-400 ">JAIL NOW</button>
+          <button class="px-5 ml-5 rounded-full text-sm font-extrabold bg-orange-500 hover:bg-orange-400">JAIL NOW</button>
         </ul>
   
       </div>

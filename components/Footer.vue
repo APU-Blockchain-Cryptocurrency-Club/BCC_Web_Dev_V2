@@ -3,9 +3,9 @@
         
             <div class="grid">
                 <div>
-                    <router-link to="/">
+                    <nuxt-link to="/">
                         <img src="../assets/APUBCC Logo.png" alt="APU BCC Logo" width="200">
-                    </router-link>
+                    </nuxt-link>
                 </div>
 
                 <div class="flex m-2">
@@ -15,7 +15,7 @@
                     </a>
 
                     <a href="https://twitter.com/apubcc" target="_blank" class="hover:bg-black transition delay-600 b b rounded-full">
-                        <img src="../assets/twitter.png" alt="APUBCC Twitter" width="35" class="m-1">
+                        <img src="../assets/white twitter.png" alt="APUBCC Twitter" width="35" class="m-1">
                     </a>
 
                     <a href="https://my.linkedin.com/company/apu-blockchain-crypto-club-apu-bcc?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" class="hover:bg-black transition delay-600 b b rounded-full">
