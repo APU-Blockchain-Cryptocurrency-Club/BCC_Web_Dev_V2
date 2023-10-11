@@ -20,7 +20,7 @@
               <router-link to="/aboutus">
                 <p class="block text-1x1 px-6 py-3 font-bold text-orange-400 hover:text-blue-500">History</p>
               </router-link>
-              <router-link to="/aboutus">
+              <router-link to="/visionmission">
                 <p class="block text-1xl px-6 py-3 font-bold text-orange-400 hover:text-blue-500">Vision &<br>Mission</p>
               </router-link>
               <router-link to="/aboutus">
