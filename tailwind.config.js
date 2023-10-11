@@ -8,7 +8,13 @@ export default {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Inter: ["Inter", "sans-serif"],
+        Encode: ["Encode Sans", "sans-serif"],
+      },
+
+    },
   },
   plugins: [],
 }

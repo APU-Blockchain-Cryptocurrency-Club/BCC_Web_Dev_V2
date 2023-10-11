@@ -1,6 +1,5 @@
 <template>
-    <div class="absolute z-10 flex bg-transparent p-3 justify-between w-4/5 left-1/2 -translate-x-1/2">
-      <!-- <div class=""> -->
+    <div class="absolute z-10 flex bg-transparent py-3 pl-32 justify-between">
       <router-link to="/">
         <div class="flex">
           <img class="w-14 h-14" src="../assets/Logo.png" alt="Logo" width="200">
@@ -8,12 +7,12 @@
         </div>
       </router-link>
   
-      <div class="m-3">
+      <div class="my-3 mx-4 left-1/2">
         <ul class="flex font-Encode font-extrabold text-lg text-white">
           <button class="px-5 flex" type="button" v-on:mouseenter="showAbt" v-on:mouseleave="hideAbt">
             ABOUT
             <span class="my-auto ml-2 h-5 w-5">
-              <img src="src\assets\dp_arrow.png" alt="">
+              <img src="../assets/dp_arrow.png" alt="">
             </span>
           </button>
           <div v-if="displayAbt" v-on:mouseenter="showAbt" v-on:mouseleave="hideAbt">
@@ -33,7 +32,6 @@
             </ul>
           </div>
   
-  
           <!-- End About Nav -->
           <li class="px-5">
               <nuxt-link to="/events">
@@ -44,7 +42,7 @@
           <button class="px-5 flex" type="button" v-on:mouseenter="showRes" v-on:mouseleave="hideRes">
             RESOURCES
             <span class="my-auto ml-2 h-5 w-5">
-              <img src="src\assets\dp_arrow.png" alt="">
+              <img src="../assets/dp_arrow.png" alt="">
             </span>
           </button>
           <div v-if="displayRes" v-on:mouseenter="showRes" v-on:mouseleave="hideRes">
@@ -63,6 +61,7 @@
               </router-link>
             </ul>
           </div>
+
           <!-- End Resource Nav -->
   
           <li class="px-5">

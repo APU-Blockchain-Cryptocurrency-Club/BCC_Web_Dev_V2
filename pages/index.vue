@@ -1,3 +1,3 @@
 <template>
-    
+    <HomeContent />
 </template>

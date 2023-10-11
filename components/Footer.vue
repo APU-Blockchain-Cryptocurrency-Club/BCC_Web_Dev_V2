@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-evenly bg-slate-600 p-10">
+    <div class="flex bg-slate-600 py-10 px-32">
         
             <div class="grid">
                 <div>
@@ -35,70 +35,64 @@
                     </a>
 
                 </div>
-                <div class="text-xs">
+                <div class="text-xs pl-3">
                     <p>@APUBCC 2023</p>
                 </div>
             </div>
+            <div class="flex mx-auto">
+                <div class="footer-block text-left mr-20" >
+                    <b class="footer-heading text-base text-orange-400">General</b>
+                    <ul class="footer-components">  
 
-            <div class="footer-block text-center mt-5" >
-                <b class="footer-heading text-base text-orange-400">General</b>
-                <ul class="footer-components">  
-                    <router-link to="/aboutus">
-                        <li class="text-white hover:text-orange-400 transition delay-600">About Us</li>
-                    </router-link>
+                            <li class="text-white hover:text-orange-400 transition delay-600">About Us</li>
 
-                    <router-link to="/mediakit">
-                        <li class="text-white hover:text-orange-400 transition delay-600">MediKit</li>
-                    </router-link>
+
+
+                            <li class="text-white hover:text-orange-400 transition delay-600">MediKit</li>
+
+                        
+
+                            <li class="text-white hover:text-orange-400 transition delay-600">FAQ</li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-block text-left mr-20">
+                    <b class="footer-heading text-base text-orange-400">Event</b>
+                    <ul class="footer-components">
+
+                            <li class="text-white hover:text-orange-400 transition delay-600">Timeline</li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-block text-left mr-20">
+                    <b class="footer-heading text-base text-orange-400"> Resources </b>
+                    <ul class="footer-components">
+
+                            <li class="text-white hover:text-orange-400 transition delay-600">About Us</li>
+
+                        
+
+                            <li class="text-white hover:text-orange-400 transition delay-600">MediKit</li>
+
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-block text-left mr-20">
+                    <b class="footer-heading text-base text-orange-400"> Support Us </b>
+                    <ul class="footer-components">
+                        
+                            <li class="text-white hover:text-orange-400 transition delay-600">Buy Us coffee</li>
+
                     
-                    <router-link to="/faq">
-                        <li class="text-white hover:text-orange-400 transition delay-600">FAQ</li>
-                    </router-link>
-                </ul>
+
+                            <li class="text-white hover:text-orange-400 transition delay-600">Crypto Addresses</li>
+                        
+                    </ul>
+                </div>
             </div>
-
-            <div class="footer-block text-center mt-5">
-                <b class="footer-heading text-base text-orange-400">Event</b>
-                <ul class="footer-components">
-                    <router-link to="/timeline">
-                        <li class="text-white hover:text-orange-400 transition delay-600">Timeline</li>
-                    </router-link>  
-                    
-                    <router-link to="/upcoming">
-                        <li class="text-white hover:text-orange-400 transition delay-600">Upcoming</li>
-                    </router-link>
-                    
-                </ul>
-            </div>
-
-            <div class="footer-block text-center mt-5">
-                <b class="footer-heading text-base text-orange-400"> Resources </b>
-                <ul class="footer-components">
-                    <router-link to="/aboutus">
-                        <li class="text-white hover:text-orange-400 transition delay-600">About Us</li>
-                    </router-link>
-                    
-                    <router-link to="/mediakit">
-                        <li class="text-white hover:text-orange-400 transition delay-600">MediKit</li>
-                    </router-link>
-                    
-                </ul>
-            </div>
-
-            <div class="footer-block text-center mt-5">
-                <b class="footer-heading text-base text-orange-400"> Support Us </b>
-                <ul class="footer-components">
-                    <router-link to="/buyusacoffee">
-                        <li class="text-white hover:text-orange-400 transition delay-600">Buy Us coffee</li>
-                    </router-link>  
-                   
-                    <router-link to="cryptoaddresses">
-                        <li class="text-white hover:text-orange-400 transition delay-600">Crypto Addresses</li>
-                    </router-link>
-                    
-                </ul>
-            </div>
-            
     </div>
 
 </template>
