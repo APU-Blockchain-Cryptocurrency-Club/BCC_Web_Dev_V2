@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute z-10 flex bg-transparent p-3 justify-between w-4/5 left-1/2 -translate-x-1/2">
+    <div class="absolute z-10 flex bg-transparent p-3 justify-between w-5/6 left-1/2 -translate-x-1/2">
       <!-- <div class=""> -->
       <router-link to="/">
         <div class="flex">
@@ -13,7 +13,7 @@
           <button class="px-5 flex" type="button" v-on:mouseenter="showAbt" v-on:mouseleave="hideAbt">
             ABOUT
             <span class="my-auto ml-2 h-5 w-5">
-              <img src="src\assets\dp_arrow.png" alt="">
+              <img src="..\assets\dp_arrow.png" alt="">
             </span>
           </button>
           <div v-if="displayAbt" v-on:mouseenter="showAbt" v-on:mouseleave="hideAbt">
@@ -21,7 +21,7 @@
               <router-link to="/aboutus">
                 <p class="block text-1x1 px-6 py-3 font-bold text-orange-400 hover:text-blue-500">History</p>
               </router-link>
-              <router-link to="/aboutus">
+              <router-link to="/visionmission">
                 <p class="block text-1xl px-6 py-3 font-bold text-orange-400 hover:text-blue-500">Vision &<br>Mission</p>
               </router-link>
               <router-link to="/aboutus">
@@ -44,7 +44,7 @@
           <button class="px-5 flex" type="button" v-on:mouseenter="showRes" v-on:mouseleave="hideRes">
             RESOURCES
             <span class="my-auto ml-2 h-5 w-5">
-              <img src="src\assets\dp_arrow.png" alt="">
+              <img src="..\assets\dp_arrow.png" alt="">
             </span>
           </button>
           <div v-if="displayRes" v-on:mouseenter="showRes" v-on:mouseleave="hideRes">
