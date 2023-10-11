@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         Inter: ["Inter", "sans-serif"],
         Encode: ["Encode Sans", "sans-serif"],
+        Segoe : ["Segoe UI", "sans-serif"],
       },
 
     },

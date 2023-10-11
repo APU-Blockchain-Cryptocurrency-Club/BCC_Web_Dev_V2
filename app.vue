@@ -5,7 +5,7 @@
       <NuxtPage/>
     </NuxtLayout>
   </div>
-  <Footer />
+  <Footer/>
 </template>
 
 <style scoped>
@@ -20,9 +20,4 @@
 <!-- <template>
   <NavBar />
   <body>
-    <img src="./assets/bg.png" alt="background" class="absolute inset-0 w-full h-full object-cover">
-    <NuxtPage />
-  </body>
-  <!-- <Footer /> -->
-</template>
-
+    <img src="./assets/bg.png" alt="background" class="absolute inset-0 w-full h-full object-cover"> -->
