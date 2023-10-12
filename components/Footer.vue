@@ -44,15 +44,15 @@
                     <b class="footer-heading text-base text-orange-400">General</b>
                     <ul class="footer-components">  
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">About Us</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">About Us</li>
 
 
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">MediKit</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">MediKit</li>
 
                         
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">FAQ</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">FAQ</li>
 
                     </ul>
                 </div>
@@ -61,7 +61,7 @@
                     <b class="footer-heading text-base text-orange-400">Event</b>
                     <ul class="footer-components">
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">Timeline</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">Timeline</li>
 
                     </ul>
                 </div>
@@ -70,11 +70,11 @@
                     <b class="footer-heading text-base text-orange-400"> Resources </b>
                     <ul class="footer-components">
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">About Us</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">About Us</li>
 
                         
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">MediKit</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">MediKit</li>
 
                         
                     </ul>
@@ -84,11 +84,11 @@
                     <b class="footer-heading text-base text-orange-400"> Support Us </b>
                     <ul class="footer-components">
                         
-                            <li class="text-white hover:text-orange-400 transition delay-600">Buy Us coffee</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">Buy Us coffee</li>
 
                     
 
-                            <li class="text-white hover:text-orange-400 transition delay-600">Crypto Addresses</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">Crypto Addresses</li>
                         
                     </ul>
                 </div>
