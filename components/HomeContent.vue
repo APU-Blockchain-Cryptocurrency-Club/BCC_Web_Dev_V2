@@ -1,6 +1,6 @@
 <template>
     <div class="pb-16">
-      <div class="text-6xl text-white pt-32 pl-32">
+      <div class="text-6xl text-white pt-12 pl-32">
           <p class="leading-normal font-bold">
               The <span class="text-orange-500 font-black">first and largest...</span>
           </p>
