@@ -35,7 +35,7 @@
                     </a>
 
                 </div>
-                <div class="text-xs pl-3">
+                <div class="text-xs pl-3 text-white">
                     <p>@APUBCC 2023</p>
                 </div>
             </div>
@@ -48,7 +48,7 @@
 
 
 
-                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">MediKit</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">Our Team </li>
 
                         
 
@@ -61,7 +61,7 @@
                     <b class="footer-heading text-base text-orange-400">Event</b>
                     <ul class="footer-components">
 
-                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">Timeline</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer"> Events </li>
 
                     </ul>
                 </div>
@@ -70,11 +70,11 @@
                     <b class="footer-heading text-base text-orange-400"> Resources </b>
                     <ul class="footer-components">
 
-                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">About Us</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer"> Blog </li>
 
                         
 
-                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">MediKit</li>
+                            <li class="text-white hover:text-orange-400 transition delay-600 cursor-pointer">Media Kit</li>
 
                         
                     </ul>
