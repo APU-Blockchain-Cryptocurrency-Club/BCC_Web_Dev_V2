@@ -1,6 +1,7 @@
 <template>
-  <NavBar />
-  <div class="background-container">
+  
+  <div class="background-container z-0">
+    <NavBar/>
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>
