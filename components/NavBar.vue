@@ -74,14 +74,14 @@
                     </li>
                 </ul>
             </div>
-            <nuxt-link to="/">
+            <NuxtLink to="/">
                 <div class="flex">
                     <img class="w-14 h-14" src="../assets/Logo.png" alt="Logo" width="200"/>
                     <p class="font-Encode font-bold text-3xl text-white m-2">
                         APUBCC
                     </p>
                 </div>
-            </nuxt-link>
+            </NuxtLink>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -91,74 +91,88 @@
                             About
                         </summary>
                         <ul class="p-2">
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    History
-                                </a>
-                            </li>
-                            <nuxt-link to="/visionmission">
+                            <NuxtLink to="/history">
+                                <li>
+                                    <a class="text-orange-400 hover:text-blue-500">
+                                        History
+                                    </a>
+                                </li>
+                            </NuxtLink>
+                            <NuxtLink to="/visionmission">
                                 <li>
                                     <a class="text-orange-400 hover:text-blue-500">
                                         Vision & Mission
                                     </a>
                                 </li>
-                            </nuxt-link>
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    Partners
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    Our Team
-                                </a>
-                            </li>
+                            </NuxtLink>
+                            <NuxtLink to="/partners">
+                                <li>
+                                    <a class="text-orange-400 hover:text-blue-500">
+                                        Partners
+                                    </a>
+                                </li>
+                            </NuxtLink>
+                            <NuxtLink to="/team">
+                                <li>
+                                    <a class="text-orange-400 hover:text-blue-500">
+                                        Our Team
+                                    </a>
+                                </li>
+                            </NuxtLink>
                         </ul>
                     </details>
                 </li>
                 
-                    <li>
-                        <a class="font-Encode font-bold text-lg text-white hover:text-gray-300">
-                            Events
-                        </a>
-                    </li>
-                
+                <li>
+                  <NuxtLink to="/events">
+                    <a class="font-Encode font-bold text-lg text-white hover:text-gray-300"> Events </a> 
+                  </NuxtLink>
+                </li>
+
                 <li tabindex="0">
                     <details>
                         <summary class="font-Encode font-bold text-lg text-white hover:text-gray-300">
                             Resources
                         </summary>
                         <ul class="p-2">
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    Blogpost
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    Youtube
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    Twitter
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500">
-                                    Podcast
-                                </a>
-                            </li>
+                            
+                                <li>
+                                    <NuxtLink to="/blog" class="text-orange-400 hover:text-blue-500">
+                                        Blogpost
+                                    </NuxtLink>
+                                </li>
+                            
+                            
+                                <li>
+                                    <NuxtLink to="/youtube" class="text-orange-400 hover:text-blue-500">
+                                        Youtube
+                                    </NuxtLink>
+                                </li>
+                            
+                            
+                                <li>
+                                    <NuxtLink to="/twitter" class="text-orange-400 hover:text-blue-500">
+                                        Twitter
+                                    </NuxtLink>
+                                </li>
+                           
+                            
+                                <li>
+                                    <NuxtLink to="/podcast" class="text-orange-400 hover:text-blue-500">
+                                        Podcast
+                                    </NuxtLink>
+                                </li>
+                           
                         </ul>
                     </details>
                 </li>
-                <li>
-                      <a class="font-Encode font-bold text-lg text-white hover:text-gray-300">
-                          FAQ
-                      </a>
-                </li>
-
- 
+                
+                    <li>
+                        <NuxtLink to="/faq">
+                           <a class="font-Encode font-bold text-lg text-white hover:text-gray-300"> FAQ </a> 
+                        </NuxtLink>
+                    </li>
+                
             </ul>
         </div>
         <div class="navbar-end pr-10">
@@ -172,4 +186,6 @@
     </div>
 </template>
 
-<script></script>
+<script>
+
+</script>
