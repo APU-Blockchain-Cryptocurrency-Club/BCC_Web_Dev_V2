@@ -1,16 +1,10 @@
 <template>
-  <div class="pt-32 px-32 pb-8">
-    <!-- top session -->
+  <div class="p-32 pt-12 pb-12">
     <div class="items-center text-justify">
       <b class="text-6xl text-orange-400 leading-normal">Partners</b>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
-    <div class="items-center text-center">
-      <b class="w-full text-6xl text-white leading-normal"
+    <div class="mt-10">
+      <b class="w-full text-5xl text-white leading-normal"
         >More partnerships. More opportunities.</b
       >
       <p class="w-full text-4xl text-white leading-normal">
@@ -20,7 +14,7 @@
 
     <!-- partner list title -->
     <div class="items-center flex text-center pt-32">
-      <b class="w-full text-6xl text-white leading-normal">Our Partners</b>
+      <b class="w-full text-5xl text-white leading-normal">Our Partners</b>
     </div>
 
     <!-- Partner List(hardcode) -->
