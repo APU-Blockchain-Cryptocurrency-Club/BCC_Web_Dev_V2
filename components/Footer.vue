@@ -57,7 +57,7 @@
         <nav>
             <header class="font-bold text-base text-orange-400"> Resources </header> 
             <a class="link link-hover text-white">Blog</a>
-            <a class="link link-hover text-white">Media Kit</a>
+            <a href="https://drive.google.com/drive/folders/14jBWb8b8P_woq8m7VnlT8yZ-1FQnNXOt" class="link link-hover text-white">Media Kit</a>
         </nav>
         <nav>
             <header class="font-bold text-base text-orange-400"> Support Us </header> 
