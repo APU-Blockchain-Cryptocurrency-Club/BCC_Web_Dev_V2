@@ -120,42 +120,34 @@
 							About
 						</summary>
 						<ul class="p-2">
-							<NuxtLink to="/history">
-								<li>
-									<a
-										class="text-orange-400 hover:text-blue-500"
-									>
-										History
-									</a>
-								</li>
-							</NuxtLink>
-							<NuxtLink to="/visionmission">
-								<li>
-									<a
-										class="text-orange-400 hover:text-blue-500"
-									>
-										Vision & Mission
-									</a>
-								</li>
-							</NuxtLink>
-							<NuxtLink to="/partners">
-								<li>
-									<a
-										class="text-orange-400 hover:text-blue-500"
-									>
-										Partners
-									</a>
-								</li>
-							</NuxtLink>
-							<NuxtLink to="/team">
-								<li>
-									<a
-										class="text-orange-400 hover:text-blue-500"
-									>
-										Our Team
-									</a>
-								</li>
-							</NuxtLink>
+              <li>
+                <NuxtLink to="/history">
+                  <a class="text-orange-400 hover:text-blue-500">
+                    History
+                  </a>
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/vision-mission">
+                  <a class="text-orange-400 hover:text-blue-500">
+                    Vision & Mission
+                  </a>
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/partners">
+                  <a class="text-orange-400 hover:text-blue-500">
+                    Partners
+                  </a>
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/team">
+                  <a class="text-orange-400 hover:text-blue-500">
+                    Our Team
+                  </a>
+                </NuxtLink>
+              </li>
 						</ul>
 					</details>
 				</li>
@@ -252,4 +244,8 @@
 	</div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "NavBar",
+};
+</script>
