@@ -53,12 +53,18 @@
               </div>
           </div>
       </div>
-    
-    
+
       <div class="w-10/12 ml-32 mt-16 pt-12 pb-12 pl-16 pr-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl font-Encode text-center">
           <h1 class="text-6xl text-orange-500 pb-10 font-bold">Learn, Buidl, Repeat</h1>
           <p class="text-4xl text-white font-semibold">We are democratizing blockchain and cryptocurrency knowledge through learning and building</p>
       </div>
+
+      <!-- <div class="card w-10/12 ml-32 mt-16 pt-12 pb-12 pl-16 pr-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl font-Encode text-center">
+        <div class="card-body text-center items-center">
+            <h2 class="card-title text-6xl text-orange-500 pb-10 font-bold">Learn, Buidl, Repeat </h2>
+            <p class="text-4xl text-white font-semibold"> We are democratizing blockchain and cryptocurrency knowledge through learning and building </p>
+        </div>
+      </div> -->
     </div>
   
   
