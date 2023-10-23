@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar z-50 pl-32">
+  <div class="navbar z-50 pl-12 sm:pl-12 md:pl-20 lg:pl-32">
     <div class="navbar-start">
       <div class="dropdown">
-        <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <label tabindex="0" class="btn btn-ghost xl:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -82,19 +82,17 @@
           </li>
         </ul>
       </div>
-      <NuxtLink to="/">
-        <div class="flex">
+      <NuxtLink to="/" class="flex items-center">
           <img
-            class="w-14 h-14"
+            class="w-8 h-8 md:w-14 md:h-14"
             src="../assets/Logo.png"
             alt="Logo"
             width="200"
           />
-          <p class="font-Encode font-bold text-3xl text-white m-2">APUBCC</p>
-        </div>
+          <p class="font-Encode font-bold text-xl md:text-3xl text-white m-2">APUBCC</p>
       </NuxtLink>
     </div>
-    <div class="navbar-center hidden lg:flex">
+    <div class="navbar-center hidden xl:flex">
       <ul class="menu menu-horizontal px-1">
         <li tabindex="0">
           <details>
@@ -200,7 +198,7 @@
     </div>
     <div class="navbar-end pr-10">
       <button
-        class="btn mr-20 px-10 rounded-full text-white text-sm font-extrabold bg-orange-500 hover:bg-orange-400 border-transparent"
+        class="hidden md:flex lg:hidden xl:flex btn mr-20 px-10 rounded-full text-white text-sm font-extrabold bg-orange-500 hover:bg-orange-400 border-transparent"
       >
         Join Now
         <svg
