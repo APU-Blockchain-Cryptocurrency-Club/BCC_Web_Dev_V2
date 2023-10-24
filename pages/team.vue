@@ -13,7 +13,7 @@
         </div>
         <div class="pt-12 mb-12">
             <ul class="flex">
-                <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'all'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('all')"> All </li>
+                <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'all'}" class=" rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('all')"> All </li>
                 <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'leaders'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('leaders')"> Leaders </li>
                 <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'events'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('events')"> Events </li>
                 <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'marketing'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('marketing')"> Marketing</li>
@@ -22,6 +22,7 @@
                 <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'pr'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('pr')"> PR </li>
                 <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'secretaries'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('secretaries')"> Secretary </li>
                 <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'treasurer'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('treasurer')"> Treasurer </li>
+                <li :class="{'rounded-2xl bg-orange-400 px-6 py-2 mx-2 text-white': currentPage === 'production'}" class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400" @click="changePage('production')"> Production </li>
             </ul>
         </div>
         <div v-if="currentPage === 'all'">
