@@ -12,12 +12,6 @@ export default defineEventHandler(async (event) => {
                 equals: "Past Events",
             },
         },
-        sorts: [
-            {
-                property: "Event Date",
-                direction: "descending",
-            },
-        ],
     });
 
     const finalResults = [];
