@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
         sorts: [
             {
                 property: "Name",
-                direction: "ascending"
+                direction: "descending"
             }
         ]
         
@@ -34,7 +34,7 @@ export default defineEventHandler(async (event) => {
 		const title = page.properties.Name.title[0]?.plain_text || "";
         const linkedInUrl = page.properties["LinkedIn URL"].url || "";
         const twitterUrl = page.properties["Twitter URL"].url || "";
-        const department = page.properties.Department.multi_select.map((option) => option.name).join(', ');
+        const department = page.properties.Department.multi_select.map((option) => option.name);
 		const imageUrl = imageBlocks[0]?.image?.file?.url || "";
 
 		if (linkedInUrl || twitterUrl) {
@@ -43,7 +43,19 @@ export default defineEventHandler(async (event) => {
 	});
 
 	await Promise.allSettled(imageBlocksPromises);
+    finalResults.sort((a, b) => a.title.localeCompare(b.title));
 	return {
 		results: finalResults,
+        lead: finalResults.filter((result) => result.department.includes("Lead")),
+        events: finalResults.filter((result) => result.department.includes("Event")),
+        marketing: finalResults.filter((result) => result.department.includes("Marketing")),
+        community: finalResults.filter((result) => result.department.includes("Community")),
+        bootcamp: finalResults.filter((result) => result.department.includes("Bootcamp")),
+        pr: finalResults.filter((result) => result.department.includes("External Relations")),
+        secretary: finalResults.filter((result) => result.department.includes("Secretary")),
+        treasurer: finalResults.filter((result) => result.department.includes("Treasurer")),
+        production: finalResults.filter((result) => result.department.includes("Production")),
+        
 	};
 });
+

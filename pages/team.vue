@@ -37,39 +37,491 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <!-- row 1 -->
-                    <tr>
+                        <tr v-for="(teamMember, index) in results" :key="index">
                         <td>
-                        <div class="flex items-center space-x-3">
+                            <div class="flex items-center space-x-3">
                             <div class="avatar">
-                            <div class="mask mask-squircle w-12 h-12">
-                                <img src="https://pbs.twimg.com/profile_images/1704535820731039746/W1Y2gXs__400x400.jpg" alt="Avatar Tailwind CSS Component" />
-                            </div>
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
                             </div>
                             <div>
-                            <div class="font-bold text-white">Hart Hagerty</div>
-                            <!-- <div class="text-sm opacity-50 text-white">United States</div> -->
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
                             </div>
-                        </div>
+                            </div>
                         </td>
                         <td>
-                        <span class="badge badge-ghost badge-md">Desktop Support Technician</span>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
                         </td>
-                        <th>
-                            <button class="btn btn-ghost btn-xs">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="white" height="4em" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
-                            </button>
-                            <button class="btn btn-ghost btn-xs">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="white" height="4em" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-                            </button>
-                        </th>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'leaders'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
                     </tr>
-                    </tbody>
-                    <!-- foot -->
-                    <tfoot>
-                        
-                    </tfoot>
-                    
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in lead" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'events'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in event" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'marketing'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in marketing" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'community'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in community" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'bootcamp'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in bootcamp" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'pr'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in pr" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'secretaries'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in secretary" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'treasurer'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in treasurer" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
+                </table>
+            </div>
+        </div>
+        <div v-if="currentPage === 'production'">
+            <div class="overflow-x-auto">
+                <table class="table text-white">
+                    <!-- head -->
+                    <thead>
+                    <tr class="text-white text-base">
+                        <th>Name</th>
+                        <th>Roles</th>
+                        <th>Social</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(teamMember, index) in production" :key="index">
+                        <td>
+                            <div class="flex items-center space-x-3">
+                            <div class="avatar">
+                                <div class="mask mask-squircle w-12 h-12">
+                                <img :src="teamMember.imageUrl" alt="Avatar" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-bold text-white">{{ teamMember.title }}</div>
+                            </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <span
+                                    v-for="(dept, index) in teamMember.department"
+                                    :key="index"
+                                    class="inline-block mr-2"
+                                >
+                                    <span class="badge badge-ghost badge-md">{{ dept }}</span>
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Display LinkedIn and Twitter links -->
+                            <a :href="teamMember.linkedInUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            LinkedIn
+                            </a>
+                            <a :href="teamMember.twitterUrl" target="_blank" class="btn btn-ghost btn-xs">
+                            Twitter
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>                  
                 </table>
             </div>
         </div>
@@ -81,13 +533,43 @@ export default {
     data(){
         return{
             currentPage: "all",
+            results: [],
+            lead: [],
+            event: [],
+            marketing: [],
+            community: [],
+            bootcamp: [],
+            pr: [],
+            secretaries: [],
+            treasurer: [],
+            production: [],
         }
     },
     methods:{
         changePage(page){
             this.currentPage = page;
         }
-    }
+    },
+    async created() {
+        try {
+            const response = await fetch("/api/fetchTeam"); // Adjust the API endpoint
+            const data = await response.json();
+            this.results = data.results; // Update the results with the data received from the API
+            this.lead = data.lead;
+            this.event = data.events;
+            this.marketing = data.marketing;
+            this.community = data.community;
+            this.bootcamp = data.bootcamp;
+            this.pr = data.pr;
+            this.secretary = data.secretary;
+            this.treasurer = data.treasurer;
+            this.production = data.production;
+
+            
+        } catch (error) {
+            console.error("Failed to fetch data:", error);
+        }
+    },
 }
 
 </script>
