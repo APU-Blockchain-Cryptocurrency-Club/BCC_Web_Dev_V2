@@ -13,7 +13,7 @@
         </div>
 
         <!-- partner list title -->
-        <div class="items-center flex text-center pt-32">
+        <div class="items-center flex text-center pt-16">
             <b class="w-full text-5xl text-white leading-normal"
                 >Our Partners</b
             >
@@ -22,7 +22,7 @@
         <!-- Carousel -->
         <Suspense>
             <div
-                class="carousel-container flex justify-center items-center space-x-5">
+                class="carousel-container flex justify-center items-center space-x-5 pt-16">
                 <button @click="scrollCarousel(-1)" class="btn btn-circle">
                     &lt;
                 </button>
