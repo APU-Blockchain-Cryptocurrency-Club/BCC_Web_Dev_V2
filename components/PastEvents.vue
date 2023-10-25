@@ -1,28 +1,40 @@
 <template>
-    <div class="carousel-container flex justify-center items-center space-x-5">
-        <button @click="scrollCarousel(-1)" class="btn btn-circle">&lt;</button>
+    <div class="flex justify-center items-center space-x-5">
+        <button
+            @click="scrollCarousel(-1)"
+            class="btn btn-circle"
+            v-if="data.length in results >= 2">
+            &lt;
+        </button>
         <div
-            class="carousel carousel-center max-w-7xl p-4 space-x-4 bg-neutral rounded-box mb-16 relative past-events"
+            class="carousel carousel-center max-w-7xl p-4 space-x-4 bg-neutral rounded-box mb-16 past-events"
             v-for="data in results"
             :key="data.id">
-            <div class="carousel-item h-fit max-h-96" v-for="event in data">
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="flex items-center h-fit w-full">
+            <div class="carousel-item h-96" v-for="event in data">
+                <div class="w-80 bg-base-100 shadow-xl rounded-box">
+                    <figure>
                         <img
                             :src="event.imageUrl"
                             :alt="event.title"
-                            class="rounded-box h-64 mx-auto" />
+                            class="rounded-t-lg h-64 w-full" />
                     </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
+                    <div class="px-4 py-2">
+                        <p class="font-bold text-lg card-title">
                             {{ event.title }}
-                        </h2>
-                        <p>{{ event.date }}</p>
+                        </p>
+                        <p>
+                            {{ event.date }}
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <button @click="scrollCarousel(1)" class="btn btn-circle">&gt;</button>
+        <button
+            @click="scrollCarousel(1)"
+            class="btn btn-circle"
+            v-if="data.length in results >= 2">
+            &gt;
+        </button>
     </div>
 </template>
 
