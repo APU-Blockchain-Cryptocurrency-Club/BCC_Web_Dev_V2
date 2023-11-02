@@ -1,11 +1,11 @@
 <template>
-  <div class="px-8 sm:p-3 sm:pt-12 sm:pb-12">
+  <div class="px-8 sm:p-3 sm:pt-12 sm:pb-12 sm:px-32">
     <div class="items-center text-justify">
       <b class="text-3xl sm:text-6xl text-orange-400 leading-normal"
         >Partners</b
       >
     </div>
-    <div class="sm:mt-10">
+    <div class="sm:mt-20">
       <b class="w-full text-2xl sm:text-5xl text-white leading-normal"
         >More partnerships. More opportunities.</b
       >
@@ -16,7 +16,7 @@
 
     <!-- partner list title -->
     <div class="items-center flex text-left sm:text-center pt-16">
-      <b class="w-full text-3xl sm:text-5xl text-white leading-normal"
+      <b class="w-full text-3xl sm:mt-20 sm:text-5xl text-white leading-normal"
         >Our Partners</b
       >
     </div>
