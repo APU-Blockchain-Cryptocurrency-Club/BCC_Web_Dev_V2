@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar z-50 pl-12 sm:pl-12 md:pl-20 lg:pl-32">
+  <div class="navbar z-50 px-4 sm:px-8 md:pl-20 lg:pl-32">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost xl:hidden">
@@ -83,13 +83,15 @@
         </ul>
       </div>
       <NuxtLink to="/" class="flex items-center">
-          <img
-            class="w-8 h-8 md:w-14 md:h-14"
-            src="../assets/Logo.png"
-            alt="Logo"
-            width="200"
-          />
-          <p class="font-Encode font-bold text-xl md:text-3xl text-white m-2">APUBCC</p>
+        <img
+          class="w-8 h-8 md:w-14 md:h-14"
+          src="../assets/Logo.png"
+          alt="Logo"
+          width="200"
+        />
+        <p class="font-Encode font-bold text-xl md:text-3xl text-white m-2">
+          APUBCC
+        </p>
       </NuxtLink>
     </div>
     <div class="navbar-center hidden xl:flex">
