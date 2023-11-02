@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center flex-col">
         <section>
-            <h1 class="text-3xl text-orange-400 font-bold">Up Coming</h1>
+            <h1 class="text-3xl text-orange-400 font-bold text-center my-5">Up Coming</h1>
             <Suspense>
                 <div class="w-full">
                     <UpComingEvents />
@@ -12,8 +12,8 @@
             </Suspense>
         </section>
 
-        <section>
-            <h1 class="text-3xl text-orange-400 font-bold">Past Events</h1>
+        <section class="mb-10">
+            <h1 class="text-3xl text-orange-400 font-bold text-center my-5">Past Events</h1>
             <Suspense>
                 <div class="w-full">
                     <PastEvents />
