@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="pb-10 sm:pb-0 sm:mt-10">
+    <div class="mt-10 pb-10 sm:pb-0 sm:mt-10">
       <div class="text-center sm:text-left mb-4">
         <b class="text-2xl sm:text-5xl text-white leading-normal">Mission</b>
       </div>

@@ -1,20 +1,24 @@
 <template>
-  <div class="sm:p-3 sm:pt-12 sm:pb-12">
+  <div class="px-8 sm:p-3 sm:pt-12 sm:pb-12">
     <div class="items-center text-justify">
-      <b class="text-6xl text-orange-400 leading-normal">Partners</b>
+      <b class="text-3xl sm:text-6xl text-orange-400 leading-normal"
+        >Partners</b
+      >
     </div>
-    <div class="mt-10">
-      <b class="w-full text-5xl text-white leading-normal"
+    <div class="sm:mt-10">
+      <b class="w-full text-2xl sm:text-5xl text-white leading-normal"
         >More partnerships. More opportunities.</b
       >
-      <p class="w-full text-4xl text-white leading-normal">
+      <p class="w-full text-2xl sm:text-4xl text-white leading-normal">
         We collaborate with different company to expand the community.
       </p>
     </div>
 
     <!-- partner list title -->
-    <div class="items-center flex text-center pt-16">
-      <b class="w-full text-5xl text-white leading-normal">Our Partners</b>
+    <div class="items-center flex text-left sm:text-center pt-16">
+      <b class="w-full text-3xl sm:text-5xl text-white leading-normal"
+        >Our Partners</b
+      >
     </div>
 
     <!-- Carousel -->
