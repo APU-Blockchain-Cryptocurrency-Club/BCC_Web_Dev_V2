@@ -12,7 +12,7 @@
             </Suspense>
         </section>
 
-        <section class="mb-10">
+        <section class="mb-16">
             <h1 class="text-3xl text-orange-400 font-bold text-center my-5">Past Events</h1>
             <Suspense>
                 <div class="w-full">

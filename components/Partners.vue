@@ -1,14 +1,9 @@
 <template>
     <div class="flex justify-center items-center space-x-5 md:w-[33rem] lg:w-[60rem]">
-        <button
-            v-if="showNavButtons"
-            @click="scrollCarousel(-1)"
-            class="btn btn-circle hidden lg:block">
-            &lt;
-        </button>
+        <button @click="scrollCarousel(-1)" class="btn btn-circle hidden lg:block">&lt;</button>
 
         <div
-            class="h-96 md:h-full max-md:w-full carousel max-md:carousel-vertical rounded-box past-events"
+            class="h-96 md:h-full max-md:w-full carousel max-md:carousel-vertical rounded-box partners"
             v-for="data in results"
             :key="data.id">
             <div
@@ -19,7 +14,7 @@
                         <img :src="event.imageUrl" :alt="event.title" class="h-fit w-fit" />
                     </figure>
                     <div class="card-body">
-                        <p :class="getTitleClass(event.title)" class="card-title">
+                        <p class="card-title">
                             {{ event.title }}
                         </p>
                         <p>
@@ -29,31 +24,17 @@
                 </div>
             </div>
         </div>
-        <button
-            v-if="showNavButtons"
-            @click="scrollCarousel(1)"
-            class="btn btn-circle hidden lg:block">
-            &gt;
-        </button>
+        <button @click="scrollCarousel(1)" class="btn btn-circle hidden lg:block">&gt;</button>
     </div>
 </template>
-
 <script setup>
-    import { computed } from "vue";
     import { ref } from "vue";
-    const { data } = await useFetch("/api/fetchPastEvents");
+    const { data } = await useFetch("/api/fetchPartners");
     const results = ref(data);
 
     const scrollCarousel = (direction) => {
-        const carousel = document.querySelector(".past-events");
+        const carousel = document.querySelector(".partners");
         const scrollAmount = 300; // Adjust as needed
         carousel.scrollLeft += direction * scrollAmount;
-    };
-    const showNavButtons = computed(() => {
-        return results.value.results.length && results.value.results.length > 1;
-    });
-
-    const getTitleClass = (title) => {
-        return title.length > 30 ? "text-xs" : "text-md";
     };
 </script>
