@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar z-50 px-4 sm:px-8 md:pl-20">
+    <div class="navbar z-50 p-4 xl:container xl:mx-auto">
         <div class="navbar-start">
             <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost xl:hidden">
@@ -184,7 +184,7 @@
         </div>
         <div class="navbar-end pr-10">
             <button
-                class="hidden md:flex lg:hidden xl:flex btn mr-20 px-10 rounded-full text-white text-sm font-extrabold bg-orange-500 hover:bg-orange-400 border-transparent">
+                class="hidden md:flex btn px-10 rounded-full text-white text-sm font-extrabold bg-orange-500 hover:bg-orange-400 border-transparent">
                 Join Now
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

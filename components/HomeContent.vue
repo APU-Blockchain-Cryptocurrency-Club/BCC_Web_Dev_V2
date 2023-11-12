@@ -1,7 +1,7 @@
 <template>
-  <div class="pb-16 max-sm:pb-4">
+  <div class="p-4 lg:px-8 lg:py-12 xl:container xl:mx-auto">
     <div
-      class="text-2xl md:text-4xl lg:text-6xl text-white pt-12 max-sm:pt-4 px-8 md:px-24 lg:px-32"
+      class="text-2xl md:text-4xl lg:text-6xl text-white"
     >
       <p class="leading-normal font-bold">
         The <span class="text-orange-500 font-black">first and largest...</span>
@@ -10,12 +10,12 @@
         <p class="leading-normal font-bold">student blockchain club</p>
         <p class="leading-normal font-bold">in Malaysia</p>
       </div>
-      <div class="flex py-16 max-sm:py-4">
+      <div class="flex py-4 md:py-8 lg:py-16 gap-4 md:gap-8">
         <button
-          class="btn btn-lg max-sm:btn-sm rounded-full border-orange-500 bg-orange-500 hover:bg-orange-400"
+          class="btn btn-sm md:btn-lg rounded-full border-orange-500 bg-orange-500 hover:bg-orange-400"
         >
           <span
-            class="flex items-center text-white font-bold text-lg max-sm:text-xs"
+            class="text-white font-bold text-xs md:text-lg"
             >Learn More</span
           >
           <svg
@@ -35,15 +35,15 @@
         </button>
 
         <button
-          class="btn btn-lg max-sm:btn-sm rounded-full btn-blue ml-12 border-blue-500 bg-blue-500 hover:bg-blue-400 max-sm:ml-4"
+          class="btn btn-sm md:btn-lg rounded-full btn-blue border-blue-500 bg-blue-500 hover:bg-blue-400"
         >
           <span
-            class="flex items-center text-white font-bold text-lg max-sm:text-xs"
+            class="text-white font-bold text-cs md:text-lg"
             >Join Now</span
           >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 ml-2 ml-2 max-sm:h-4 max-sm:w-4"
+            class="h-6 w-6 ml-2 ml-2 max-sm:h-4 max-sm:w-4 flex-shrink-0"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="2.5"
@@ -60,11 +60,11 @@
     </div>
 
     <div
-      class="mx-32 flex text-6xl font-Encode text-white pt-16 pb-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl max-sm:px-8 max-sm:pt-4 max-sm:mx-8 max-sm:pb-4 max-sm:rounded-lg max-sm:mt-2"
+      class="grid grid-cols-3 gap-4 text-6xl font-Encode text-white p-4 sm:p-8 lg:p-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg md:rounded-3xl mt-2"
     >
-      <div class="flex items-center mx-auto">
+      <div class="flex items-center gap-4">
         <svg
-          class="h-28 w-28 max-sm:h-8 max-sm:w-8"
+          class="h-8 w-8 sm:h-16 sm:w-16 lg:h-28 lg:w-28 flex-shrink-0"
           fill="white"
           xmlns="http://www.w3.org/2000/svg"
           height="24"
@@ -75,15 +75,15 @@
             d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"
           />
         </svg>
-        <div class="pl-2 pr-32 max-sm:pr-2">
-          <p class="font-bold text-5xl max-sm:text-xs">500+</p>
-          <p class="font-medium text-4xl max-sm:text-xs">Members</p>
+        <div>
+          <p class="font-bold text-xs sm:text-xl lg:text-4xl">500+</p>
+          <p class="font-medium text-xs sm:text-xl lg:text-4xl">Members</p>
         </div>
       </div>
 
-      <div class="flex items-center mx-auto">
+      <div class="flex items-center gap-4">
         <svg
-          class="h-28 w-28 max-sm:h-8 max-sm:w-8"
+          class="h-8 w-8 sm:h-16 sm:w-16 lg:h-28 lg:w-28 flex-shrink-0"
           xmlns="http://www.w3.org/2000/svg"
           fill="white"
           height="24"
@@ -94,15 +94,15 @@
             d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
           />
         </svg>
-        <div class="pr-32 max-sm:pr-2">
-          <p class="font-bold text-5xl max-sm:text-xs">50+</p>
-          <p class="font-medium text-4xl max-sm:text-xs">Committees</p>
+        <div>
+          <p class="font-bold text-xs sm:text-xl lg:text-4xl">50+</p>
+          <p class="font-medium text-xs sm:text-xl lg:text-4xl">Committees</p>
         </div>
       </div>
 
-      <div class="flex items-center mx-auto">
+      <div class="flex items-center gap-4">
         <svg
-          class="w-28 h-28 max-sm:h-8 max-sm:w-8"
+          class="h-8 w-8 sm:h-16 sm:w-16 lg:h-28 lg:w-28 flex-shrink-0"
           fill="white"
           xmlns="http://www.w3.org/2000/svg"
           height="24"
@@ -113,18 +113,18 @@
             d="M438-226 296-368l58-58 84 84 168-168 58 58-226 226ZM200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z"
           />
         </svg>
-        <div class="pr-32 max-sm:pr-2">
-          <p class="font-bold text-5xl max-sm:text-xs">20+</p>
-          <p class="font-medium text-4xl max-sm:text-xs">Events</p>
+        <div>
+          <p class="font-bold text-xs sm:text-xl lg:text-4xl">20+</p>
+          <p class="font-medium text-xs sm:text-xl lg:text-4xl">Events</p>
         </div>
       </div>
     </div>
 
     <div
-      class="mx-32 mt-16 pt-12 pb-12 pl-16 pr-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl font-Encode text-center max-sm:mx-8 max-sm:flex-col max-sm:text-left max-sm:pt-4 max-sm:pb-4 max-sm:pl-4 max-sm:pr-4 max-sm:mt-4 max-sm:rounded-lg"
+      class="p-4 sm:p-8 lg:p-12 mt-8 lg:mt-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg md:rounded-3xl font-Encode text-left md:text-center flex flex-col gap-2 md:gap-4"
     >
       <h1
-        class="text-6xl text-orange-500 pb-10 font-bold max-sm:text-xl max-sm:pb-4"
+        class="text-xl md:text-6xl text-orange-500 font-bold"
       >
         Learn, Buidl, Repeat
       </h1>
