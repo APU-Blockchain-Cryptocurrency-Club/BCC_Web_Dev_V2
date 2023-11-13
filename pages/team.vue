@@ -14,7 +14,7 @@
         and cryptocurrency.
       </p>
     </div>
-    <details className="dropdown relative">
+    <details className="dropdown relative lg:hidden">
       <summary tabindex="0" class="btn btn-ghost text-lg text-orange-400">
         {{ currentPage }}
       </summary>
@@ -33,6 +33,17 @@
         </li>
       </ul>
     </details>
+    <ul class="hidden lg:flex items-center gap-4 [&>li]:flex-grow-0 flex-wrap my-4">
+        <li
+          v-for="dept in departments"
+          :key="dept"
+          class="rounded-2xl px-6 py-2 mx-2 text-white hover:bg-orange-400 cursor-pointer"
+          :class="{ 'bg-orange-400 text-white': currentPage === dept }"
+          @click="changePage(dept)"
+        >
+          {{ dept }}
+        </li>
+    </ul>
 
     <!-- TODO: add loading spinner here cuz data fetching takes too long -->
     <div>
