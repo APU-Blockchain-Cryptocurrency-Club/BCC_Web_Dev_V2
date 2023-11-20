@@ -1,5 +1,5 @@
 <template>
-    <div class="px-8 sm:p-3 sm:pt-12 sm:pb-12 sm:px-32">
+    <div class="p-4 max-sm:p-8 sm:p-8 xl:container xl:mx-auto">
         <div class="items-center text-justify">
             <b class="text-3xl sm:text-6xl text-orange-400 leading-normal">Partners</b>
         </div>

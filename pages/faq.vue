@@ -1,5 +1,5 @@
 <template>
-  <div class="px-8 pb-12 p-14 lg:p-32 pt-12 lg:pt-16 ">
+  <div class="p-4 max-sm:p-8 sm:p-8 xl:container xl:mx-auto">
     <div>
       <h1 class="leading-none text-orange-400 font-bold text-4xl sm:text-5xl md:text-6xl "> Frequently Asked Questions
       </h1>

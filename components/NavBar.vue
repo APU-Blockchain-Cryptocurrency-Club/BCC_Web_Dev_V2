@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar z-50 p-4 xl:container xl:mx-auto">
+    <div class="navbar z-50 p-8 xl:container xl:mx-auto">
         
         <!-- Mobile Dropdown Menu -->
         <div class="navbar-start">

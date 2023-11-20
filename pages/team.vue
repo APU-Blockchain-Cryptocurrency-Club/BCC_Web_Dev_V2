@@ -1,5 +1,5 @@
 <template>
-  <div class="px-8 md:pl-20 xl:p-32 xl:pt-12 xl:pb-12">
+  <div class="p-4 max-sm:p-8 sm:p-8 xl:container xl:mx-auto">
     <div>
       <b class="text-4xl xl:text-6xl text-orange-400 leading-normal">
         Our Team
@@ -115,16 +115,16 @@ export default {
     return {
       currentPage: "all",
       departments: [
-        "all",
-        "lead",
-        "event",
-        "marketing",
-        "community",
-        "bootcamp",
-        "external relations",
-        "secretary",
-        "treasurer",
-        "production",
+        "All",
+        "Lead",
+        "Event",
+        "Marketing",
+        "Community",
+        "Bootcamp",
+        "External Relations",
+        "Secretary",
+        "Treasurer",
+        "Production"
       ],
       committees: [],
       filteredCommittees: [],
@@ -133,7 +133,7 @@ export default {
   methods: {
     changePage(page) {
       this.currentPage = page;
-      if (page === "all") {
+      if (page === "All") {
         this.filteredCommittees = this.committees;
         return;
       }

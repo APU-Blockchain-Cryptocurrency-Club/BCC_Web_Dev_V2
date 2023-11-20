@@ -1,5 +1,5 @@
 <template>
-  <div class="px-8 sm:p-32 sm:pt-12 sm:pb-12">
+  <div class="p-4 max-sm:p-8 sm:p-8 xl:container xl:mx-auto">
     <div>
       <b class="text-3xl sm:text-6xl text-orange-400 leading-normal"
         >Vision & Mission</b
@@ -7,7 +7,7 @@
     </div>
 
     <div class="sm:mt-10">
-      <div class="text-center sm:text-left mb-4">
+      <div class="text-left mb-4">
         <b class="text-2xl sm:text-5xl text-white leading-normal">Vision</b>
       </div>
 
@@ -23,7 +23,7 @@
     </div>
 
     <div class="mt-10 pb-10 sm:pb-0 sm:mt-10">
-      <div class="text-center sm:text-left mb-4">
+      <div class="text-left mb-4">
         <b class="text-2xl sm:text-5xl text-white leading-normal">Mission</b>
       </div>
 

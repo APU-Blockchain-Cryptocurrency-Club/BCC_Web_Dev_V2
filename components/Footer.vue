@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer p-10 bg-slate-600 text-base-content pl-16 sm:pl-16 md:pl-20 lg:pl-32">
+    <footer class="footer pt-10 p-8 bg-slate-600 text-base-content max-sm:p-8 sm:p-8 xl:mx-auto">
             <aside>
                 <div>
                     <NuxtLink to="/">
