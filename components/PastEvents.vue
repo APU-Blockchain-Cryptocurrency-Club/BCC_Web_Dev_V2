@@ -1,5 +1,6 @@
 <template>
-    <div class="flex justify-center items-center space-x-5 md:w-[33rem] lg:w-[60rem]">
+    <div
+        class="flex justify-center items-center space-x-5 md:w-[41rem] lg:w-[60rem] md:px-10 lg:px-0">
         <button
             v-if="showNavButtons"
             @click="scrollCarousel(-1)"
