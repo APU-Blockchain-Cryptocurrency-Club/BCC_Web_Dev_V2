@@ -1,9 +1,10 @@
 <template>
-    <div class="flex justify-center items-center space-x-5 md:w-[42.5rem] lg:w-[60rem]">
+    <div
+        class="flex justify-start md:justify-center items-center space-x-5 md:w-[42.5rem] lg:w-[60rem]">
         <button @click="scrollCarousel(-1)" class="btn btn-circle hidden md:block">&lt;</button>
 
         <div
-            class="h-96 md:h-full w-full carousel max-md:carousel-vertical rounded-box past-events"
+            class="h-96 md:h-full w-fit carousel max-md:carousel-vertical rounded-box past-events"
             v-for="data in results"
             :key="data.id">
             <div
