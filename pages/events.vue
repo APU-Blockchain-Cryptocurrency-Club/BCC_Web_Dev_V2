@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-start pl-20 w-full">
+    <div class="flex flex-col justify-start pl-11 sm:pl-16 w-full">
         <section>
             <h1 class="text-2xl text-orange-400 font-bold my-5 md:pl-20 text-left w-[300px]">
                 Upcoming Events
