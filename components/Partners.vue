@@ -8,17 +8,17 @@
             :key="data.id">
             <div
                 class="carousel-item p-4 w-40 sm:w-60 md:h-96 lg:h-80 bg-info-content"
-                v-for="event in data">
+                v-for="partners in data">
                 <div class="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure>
-                        <img :src="event.imageUrl" :alt="event.title" class="h-fit w-fit" />
+                        <img :src="partners.imageUrl" :alt="partners.title" class="h-fit w-fit" />
                     </figure>
                     <div class="card-body">
                         <p class="card-title">
-                            {{ event.title }}
+                            {{ partners.title }}
                         </p>
                         <p>
-                            {{ event.date }}
+                            {{ partners.date }}
                         </p>
                     </div>
                 </div>

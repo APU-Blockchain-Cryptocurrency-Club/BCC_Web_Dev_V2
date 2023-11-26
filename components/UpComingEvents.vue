@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <p v-else class="text-xl text-white w-full text-left px-20">No Upcoming Event</p>
+        <p v-else class="text-xl text-white text-left">No Upcoming Event</p>
 
         <button
             v-if="showNavButtons"

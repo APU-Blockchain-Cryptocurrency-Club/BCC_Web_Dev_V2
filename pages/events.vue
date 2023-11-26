@@ -1,7 +1,9 @@
 <template>
-    <div class="flex flex-col justify-start px-20">
+    <div class="flex flex-col justify-start pl-20 w-full">
         <section>
-            <h1 class="text-3xl text-orange-400 font-bold my-5 px-20">Upcoming Events</h1>
+            <h1 class="text-2xl text-orange-400 font-bold my-5 md:pl-20 text-left w-[300px]">
+                Upcoming Events
+            </h1>
             <Suspense>
                 <div class="w-full">
                     <UpComingEvents />
@@ -13,7 +15,7 @@
         </section>
 
         <section class="mb-16">
-            <h1 class="text-3xl text-orange-400 font-bold my-5 px-20">Past Events</h1>
+            <h1 class="text-2xl text-orange-400 font-bold my-5 md:pl-20 text-left">Past Events</h1>
             <Suspense>
                 <div class="w-full">
                     <PastEvents />
