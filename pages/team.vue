@@ -25,7 +25,7 @@
         <li
           v-for="dept in departments"
           :key="dept"
-          class="rounded-2xl px-6 py-2 mx-2 text-black hover:bg-orange-400 cursor-pointer"
+          class="rounded-2xl px-6 py-2 mx-2 text-orange-500 hover:text-gray-300 hover:bg-orange-400 cursor-pointer"
           :class="{ 'bg-orange-400 text-white': currentPage === dept }"
           @click="changePage(dept)"
         >
