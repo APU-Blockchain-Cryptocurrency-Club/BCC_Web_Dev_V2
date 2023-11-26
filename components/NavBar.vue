@@ -63,16 +63,13 @@
                         </a>
                         <ul class="p-2">
                             <li>
-                                <a class="text-orange-400 hover:text-blue-500"> Blogpost </a>
+                                <a class="text-orange-400 hover:text-blue-500"> Onboard </a>
                             </li>
                             <li>
-                                <a class="text-orange-400 hover:text-blue-500"> Youtube </a>
+                                <a class="text-orange-400 hover:text-blue-500"> Substack </a>
                             </li>
                             <li>
-                                <a class="text-orange-400 hover:text-blue-500"> Twitter </a>
-                            </li>
-                            <li>
-                                <a class="text-orange-400 hover:text-blue-500"> Podcast </a>
+                                <a class="text-orange-400 hover:text-blue-500"> Alpha Access </a>
                             </li>
                         </ul>
                     </li>
@@ -147,34 +144,25 @@
                         </summary>
                         <ul class="p-2">
                             <li>
-                                <NuxtLink to="/blog" class="text-orange-400 hover:text-blue-500">
-                                    Blogpost
-                                </NuxtLink>
+                                <a href="https://onboard.dev/community/apubcc" target="_blank" class="text-orange-400 hover:text-blue-500">
+                                    Onboard
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://apubcc.substack.com/" target="_blank" class="text-orange-400 hover:text-blue-500">
+                                    Substack
+                                </a>
                             </li>
 
                             <li>
                                 <NuxtLink
-                                    to="/youtube"
+                                    to="/alpha-access"
                                     class="text-orange-400 hover:text-blue-500">
-                                    Youtube
+                                    Alpha Access
                                 </NuxtLink>
                             </li>
 
-                            <li>
-                                <NuxtLink
-                                    to="/twitter"
-                                    class="text-orange-400 hover:text-blue-500">
-                                    Twitter
-                                </NuxtLink>
-                            </li>
-
-                            <li>
-                                <NuxtLink
-                                    to="/podcast"
-                                    class="text-orange-400 hover:text-blue-500">
-                                    Podcast
-                                </NuxtLink>
-                            </li>
                         </ul>
                     </details>
                 </li>
