@@ -1,29 +1,27 @@
 <template>
-    <div class="flex flex-col justify-start pl-11 sm:pl-16 w-full">
-        <section>
-            <h1 class="text-2xl text-orange-400 font-bold my-5 md:pl-20 text-left w-[300px]">
-                Upcoming Events
-            </h1>
-            <Suspense>
-                <div class="w-full">
-                    <UpComingEvents />
-                </div>
-                <template #fallback>
-                    <span class="loading loading-spinner loading-lg"> </span>
-                </template>
-            </Suspense>
-        </section>
+    <div class="p-4 max-sm:p-8 sm:p-8 xl:container xl:mx-auto space-y-5">
+        <div class="items-center text-justify">
+            <b class="text-3xl sm:text-4xl text-orange-400 leading-normal">Upcoming Events</b>
+        </div>
+        <Suspense>
+            <div class="w-full">
+                <UpComingEvents />
+            </div>
+            <template #fallback>
+                <span class="loading loading-spinner loading-lg"> </span>
+            </template>
+        </Suspense>
 
-        <section class="mb-16">
-            <h1 class="text-2xl text-orange-400 font-bold my-5 md:pl-20 text-left">Past Events</h1>
-            <Suspense>
-                <div class="w-full">
-                    <PastEvents />
-                </div>
-                <template #fallback>
-                    <span class="loading loading-spinner loading-lg"> </span>
-                </template>
-            </Suspense>
-        </section>
+        <div class="items-center text-justify">
+            <b class="text-3xl sm:text-4xl text-orange-400 leading-normal">Past Events</b>
+        </div>
+        <Suspense>
+            <div class="w-full">
+                <PastEvents />
+            </div>
+            <template #fallback>
+                <span class="loading loading-spinner loading-lg"> </span>
+            </template>
+        </Suspense>
     </div>
 </template>
