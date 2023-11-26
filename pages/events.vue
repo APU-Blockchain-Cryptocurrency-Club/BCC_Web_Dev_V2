@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col justify-start px-20">
         <section>
-            <h1 class="text-3xl text-orange-400 font-bold my-5 px-20">Up Coming</h1>
+            <h1 class="text-3xl text-orange-400 font-bold my-5 px-20">Upcoming Events</h1>
             <Suspense>
                 <div class="w-full">
                     <UpComingEvents />
