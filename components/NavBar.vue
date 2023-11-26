@@ -21,7 +21,8 @@
                     tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li>
-                        <a class="font-Encode font-bold text-lg text-orange-500 hover:text-gray-300 hover:text-gray-300">
+                        <a
+                            class="font-Encode font-bold text-lg text-orange-500 hover:text-gray-300">
                             About
                         </a>
                         <ul class="p-2">
@@ -144,13 +145,19 @@
                         </summary>
                         <ul class="p-2">
                             <li>
-                                <a href="https://onboard.dev/community/apubcc" target="_blank" class="text-orange-400 hover:text-blue-500">
+                                <a
+                                    href="https://onboard.dev/community/apubcc"
+                                    target="_blank"
+                                    class="text-orange-400 hover:text-blue-500">
                                     Onboard
                                 </a>
                             </li>
 
                             <li>
-                                <a href="https://apubcc.substack.com/" target="_blank" class="text-orange-400 hover:text-blue-500">
+                                <a
+                                    href="https://apubcc.substack.com/"
+                                    target="_blank"
+                                    class="text-orange-400 hover:text-blue-500">
                                     Substack
                                 </a>
                             </li>
@@ -162,7 +169,6 @@
                                     Alpha Access
                                 </NuxtLink>
                             </li>
-
                         </ul>
                     </details>
                 </li>
