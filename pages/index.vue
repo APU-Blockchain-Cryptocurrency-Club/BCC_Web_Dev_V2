@@ -2,7 +2,7 @@
     <div class="p-4 max-sm:p-8 sm:p-8 xl:container xl:mx-auto">
         <div class="text-2xl md:text-4xl lg:text-6xl text-white">
             <p class="leading-normal font-bold ml-2">
-                The <span class="text-orange-500 font-black">first and largest...</span>
+                The <span class="text-orange-500 font-black typewriter-text">{{ typedText }}</span>
             </p>
             <div>
                 <p class="leading-normal font-bold ml-2">student blockchain club</p>
@@ -109,3 +109,35 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      text: "first and largest...",
+      typedText: "",
+      speed: 200, // Adjust the typing speed (milliseconds per character)
+    };
+  },
+  mounted() {
+    this.typeWriter();
+  },
+  methods: {
+    typeWriter() {
+      let i = 0;
+      const typeEffect = () => {
+        if (i < this.text.length) {
+          this.typedText += this.text.charAt(i);
+          i++;
+          setTimeout(typeEffect, this.speed);
+        } else {
+            this.typedText = "";
+            i = 0;
+            setTimeout(typeEffect, this.speed);
+        }
+      };
+      typeEffect();
+    },
+  },
+};
+</script>
