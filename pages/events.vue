@@ -16,7 +16,7 @@
             <b class="text-3xl sm:text-4xl text-orange-400 leading-normal">Past Events</b>
         </div>
         <Suspense>
-            <div class="w-full">
+            <div class="w-full flex justify-center">
                 <PastEvents />
             </div>
             <template #fallback>
