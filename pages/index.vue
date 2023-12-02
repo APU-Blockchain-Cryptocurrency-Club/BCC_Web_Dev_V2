@@ -9,39 +9,45 @@
                 <p class="leading-normal font-bold ml-2">in Malaysia</p>
             </div>
             <div class="flex py-4 md:py-8 lg:py-16 gap-4 md:gap-8">
-                <button
-                    class="btn btn-sm md:btn-lg rounded-full border-orange-500 bg-orange-500 hover:bg-orange-400">
-                    <span class="text-white font-bold text-xs md:text-lg">Learn More</span>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2.5"
-                        stroke="white"
-                        class="h-6 w-6 ml-2 max-sm:h-4 max-sm:w-4">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                    </svg>
-                </button>
+                <NuxtLink to="/vision-mission">
+                    <button
+                        class="btn btn-sm md:btn-lg rounded-full border-orange-500 bg-orange-500 hover:bg-orange-400">
+                        <span class="text-white font-bold text-xs md:text-lg">Learn More</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2.5"
+                            stroke="white"
+                            class="h-6 w-6 ml-2 max-sm:h-4 max-sm:w-4">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+                    </button>
+                </NuxtLink>
 
-                <button
-                    class="btn btn-sm md:btn-lg rounded-full btn-blue border-blue-500 bg-blue-500 hover:bg-blue-400">
-                    <span class="text-white font-bold text-cs md:text-lg">Join Now</span>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6 ml-2 max-sm:h-4 max-sm:w-4 flex-shrink-0"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2.5"
-                        stroke="white">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                    </svg>
-                </button>
+                <a
+                    href="https://forms.office.com/Pages/ResponsePage.aspx?id=owPtDy1AM0aozYswiCIlPnXexahZ7q5IsmNJl1_ZU91UNFYyQU01Mkg4TUpBMDlGUTlTTTc1VDVaSS4u"
+                    target="_blank">
+                    <button
+                        class="btn btn-sm md:btn-lg rounded-full btn-blue border-blue-500 bg-blue-500 hover:bg-blue-400">
+                        <span class="text-white font-bold text-cs md:text-lg">Join Now</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 ml-2 max-sm:h-4 max-sm:w-4 flex-shrink-0"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2.5"
+                            stroke="white">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                        </svg>
+                    </button>
+                </a>
             </div>
         </div>
 
@@ -111,33 +117,33 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      text: "first and largest...",
-      typedText: "",
-      speed: 200, // Adjust the typing speed (milliseconds per character)
+    export default {
+        data() {
+            return {
+                text: "first and largest...",
+                typedText: "",
+                speed: 200, // Adjust the typing speed (milliseconds per character)
+            };
+        },
+        mounted() {
+            this.typeWriter();
+        },
+        methods: {
+            typeWriter() {
+                let i = 0;
+                const typeEffect = () => {
+                    if (i < this.text.length) {
+                        this.typedText += this.text.charAt(i);
+                        i++;
+                        setTimeout(typeEffect, this.speed);
+                    } else {
+                        this.typedText = "";
+                        i = 0;
+                        setTimeout(typeEffect, this.speed);
+                    }
+                };
+                typeEffect();
+            },
+        },
     };
-  },
-  mounted() {
-    this.typeWriter();
-  },
-  methods: {
-    typeWriter() {
-      let i = 0;
-      const typeEffect = () => {
-        if (i < this.text.length) {
-          this.typedText += this.text.charAt(i);
-          i++;
-          setTimeout(typeEffect, this.speed);
-        } else {
-            this.typedText = "";
-            i = 0;
-            setTimeout(typeEffect, this.speed);
-        }
-      };
-      typeEffect();
-    },
-  },
-};
 </script>

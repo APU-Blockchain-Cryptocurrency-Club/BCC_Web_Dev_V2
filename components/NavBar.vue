@@ -26,9 +26,9 @@
                             About
                         </a>
                         <ul class="p-2">
-                            <li>
+                            <!-- <li>
                                 <a class="text-orange-400 hover:text-blue-500"> History </a>
-                            </li>
+                            </li> -->
                             <li>
                                 <NuxtLink
                                     to="/vision-mission"
@@ -103,11 +103,11 @@
                             About
                         </summary>
                         <ul class="p-2">
-                            <li>
+                            <!-- <li>
                                 <NuxtLink to="/history">
                                     <a class="text-orange-400 hover:text-blue-500"> History </a>
                                 </NuxtLink>
-                            </li>
+                            </li> -->
                             <li>
                                 <NuxtLink to="/vision-mission">
                                     <a class="text-orange-400 hover:text-blue-500">
@@ -162,13 +162,13 @@
                                 </a>
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <NuxtLink
                                     to="/alpha-access"
                                     class="text-orange-400 hover:text-blue-500">
                                     Alpha Access
                                 </NuxtLink>
-                            </li>
+                            </li> -->
                         </ul>
                     </details>
                 </li>
@@ -184,22 +184,26 @@
 
         <!-- Join Now button -->
         <div class="navbar-end pr-10">
-            <button
-                class="hidden md:flex btn px-10 rounded-full text-white text-sm font-extrabold bg-orange-500 hover:bg-orange-400 border-transparent">
-                Join Now
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-            </button>
+            <a
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=owPtDy1AM0aozYswiCIlPnXexahZ7q5IsmNJl1_ZU91UNFYyQU01Mkg4TUpBMDlGUTlTTTc1VDVaSS4u"
+                target="_blank">
+                <button
+                    class="hidden md:flex btn px-10 rounded-full text-white text-sm font-extrabold bg-orange-500 hover:bg-orange-400 border-transparent">
+                    Join Now
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </button>
+            </a>
         </div>
     </div>
 </template>
