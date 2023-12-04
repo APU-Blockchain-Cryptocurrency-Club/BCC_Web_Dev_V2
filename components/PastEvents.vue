@@ -12,10 +12,13 @@
                 v-for="events in data">
                 <div class="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure>
-                        <img :src="events.imageUrl" :alt="events.title" class="h-fit w-fit" />
+                        <img
+                            :src="events.imageUrl"
+                            :alt="events.title"
+                            class="h-fit w-fit object-contain" />
                     </figure>
                     <div class="card-body">
-                        <p class="card-title">
+                        <p class="card-title" :class="getTitleClass(events.title)">
                             {{ events.title }}
                         </p>
                         <p>
@@ -40,11 +43,8 @@
         const scrollAmount = 300; // Adjust as needed
         carousel.scrollLeft += direction * scrollAmount;
     };
-    const showNavButtons = computed(() => {
-        return results.value.results.length && results.value.results.length > 1;
-    });
 
     const getTitleClass = (title) => {
-        return title.length > 30 ? "text-xs" : "text-md";
+        return title.length > 30 ? "text-sm" : "text-md";
     };
 </script>
