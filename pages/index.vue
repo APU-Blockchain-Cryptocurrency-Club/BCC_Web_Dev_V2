@@ -106,7 +106,7 @@
         </div>
 
         <div
-            class="p-4 sm:p-8 lg:p-12 mt-8 lg:mt-16 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg md:rounded-3xl font-Encode text-left md:text-center flex flex-col gap-2 md:gap-4">
+            class="p-4 sm:p-8 lg:p-12 mt-8 lg:mt-12 lg:mb-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg md:rounded-3xl font-Encode text-left md:text-center flex flex-col gap-2 md:gap-4">
             <h1 class="text-xl md:text-6xl text-orange-500 font-bold">Learn, Buidl, Repeat</h1>
             <p class="text-4xl text-white font-semibold max-sm:text-lg">
                 We are democratizing blockchain and cryptocurrency knowledge through learning and

@@ -11,7 +11,7 @@
         <b class="text-2xl sm:text-5xl text-white leading-normal">Vision</b>
       </div>
 
-      <div class="p-5 bg-white bg-opacity-25 rounded-3xl">
+      <div class="p-8 bg-white bg-opacity-25 rounded-3xl">
         <b class="text-white text-lg leading-normal">
           To be the leading student hub in Malaysia that gather Web3 talents and
           empower students to contribute their unique skills sets and creativity
@@ -27,7 +27,7 @@
         <b class="text-2xl sm:text-5xl text-white leading-normal">Mission</b>
       </div>
 
-      <div class="bg-white bg-opacity-25 p-5 rounded-3xl">
+      <div class="bg-white bg-opacity-25 p-8 rounded-3xl">
         <b class="text-white text-lg leading-normal">
           To establish a community platform that offers blockchain education,
           support and mentorship that eventually leads to creating more
