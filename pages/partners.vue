@@ -21,7 +21,9 @@
 
         <!-- Carousel -->
         <Suspense>
-            <div class="flex justify-center mt-20 md:mt-10"><Partners /></div>
+            <div class="flex justify-center mt-20 md:mt-10">
+                <Partners />
+            </div>
 
             <!-- fallback -->
             <template #fallback>
